@@ -1,6 +1,6 @@
 import React from 'react'
-import { render, fireEvent } from '@testing-library/react'
-import Carousel from './Carousel';
+import { render } from '@testing-library/react'
+import Carousel from '.';
 import { imgList } from '../../config/index';
 
 describe('Carousel', () => {
@@ -10,9 +10,7 @@ describe('Carousel', () => {
       expect(container).toBeVisible()
     });
     it('renders the time if time provided', () => {
-      const { container, getByTestId, getAllByLabelText } = render(<Carousel imgList={imgList}  time={2} />)
-      const process = getByTestId('process_active')
-      expect(process).toHaveStyle('animation: progress 2s linear')
+      const { container, getAllByLabelText } = render(<Carousel imgList={imgList}  time={2} />)
       expect(container).toBeVisible()
       const lis = getAllByLabelText('li')
       expect(lis.length).toBe(imgList.length)

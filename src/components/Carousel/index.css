@@ -1,14 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body {
-    width: 100%;
-    height: 100%;
-    --bg-grey: #a9a9a9;
-    --bg-active-grey: #fafafa;
-}
 .carousel {
     position: relative;
     height: 100vh;
@@ -21,18 +10,6 @@ body {
     width: 100%;
 }
 
-.carousel-container .item {
-   height: 100vh;
-   box-sizing: border-box;
-   flex-shrink: 0;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 100px 0;
-   overflow: hidden;
-   transition: all 1s;
-}
 .carousel-container h1 {
     font-size: 48px;
 }
