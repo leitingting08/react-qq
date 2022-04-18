@@ -1,10 +1,12 @@
 import React from "react";
-import Carousel from "./components/Carousel";
+import Query from "./components/Query";
 import "./App.css";
-import { imgList } from './config';
 
 function App() {
-  return <div className="App"><Carousel imgList={imgList} /></div>;
+  return <div className="App">
+    <h1>QQ号查询</h1>
+    <Query />
+  </div>;
 }
 
 export default App;

@@ -1,0 +1,26 @@
+.qqitem {
+  display: flex;
+  width: 170px;
+  margin: auto;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 6px 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+.qqitem img {
+  width: 35px;
+  height: 35px;
+  border-radius: 99999px;
+}
+
+.qqitem p {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.qqitem .qq {
+  color: #666;
+  margin-top: 3px;
+  font-size: 14px;
+}
